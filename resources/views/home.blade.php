@@ -10,6 +10,15 @@
 
 <body>
     <h1>Hello World!</h1>
+
+    <div class='details'>
+        <p class="name">{{$name}}</p>
+        <p class="lastname">{{$lastname}}</p>
+        <p class="age">{{$age}}</p>
+        @foreach ($interests as $interest)
+        <p class="interests">{{$interest}}</p>
+        @endforeach
+    </div>
 </body>
 
 </html>
